@@ -1,10 +1,11 @@
 import './App.css';
-import Sidebar from './components/Sidebar/Sidebar';
+
+import Home from './pages/user/Home';
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <Home />
     </>
   );
 }
