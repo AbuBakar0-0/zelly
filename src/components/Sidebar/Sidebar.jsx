@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import AddShop from "../../screens/Admin/AddShop";
-import Floors from "../../screens/Admin/Floors";
-import AddFloor from "../Cards/AddFloor";
+import Products from '../.././screens/AdminSide/Admin/Products';
+
+
 export default function Sidebar() {
     const [show, setShow] = useState(false);
     const [profile, setProfile] = useState(false);
     return (
         <>
             <div className="w-full h-full">
-                <div className="flex flex-no-wrap">
-                    {/* Sidebar starts */}
+                <div className="flex flex-no-wrap"> 
+                    {/* Sidebar starts */}  
                     <div className="w-64 absolute lg:relative bg-white shadow h-screen flex-col justify-between hidden lg:flex pb-12">
                         <div className="px-8">
                             <div className="h-16 w-full flex items-center">
@@ -267,7 +267,7 @@ export default function Sidebar() {
                         {/* Remove class [ h-64 ] when adding a card block */}
                         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 ">
                             {/* Remove class [ ] to remove dotted border */}
-                            <div className="w-full h-full rounded"><AddShop /></div>
+                            <div className="w-full h-full rounded"><Products /></div>
                         </div>
                     </div>
                 </div>

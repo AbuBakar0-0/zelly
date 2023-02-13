@@ -1,23 +1,23 @@
 import React from 'react'
-import AddFloor from '../../components/Cards/AddFloor';
-import FloorCard from '../../components/Cards/FloorCard';
+import ShopCard from '../../../components/Cards/ShopCard';
+import AddCard from '../../../components/Cards/AddCard';
 
-export default function Floors() {
+export default function Shops() {
     return (
         <>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap -m-4">
-                        <FloorCard />
-                        <FloorCard />
-                        <FloorCard />
+                        <ShopCard />
+                        <ShopCard />
+                        <ShopCard />
                     </div>
                 </div>
             </section>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 mx-auto">
                     <div class="flex flex-wrap -m-4">
-                        <AddFloor />
+                        <AddCard />
                     </div>
                 </div>
             </section>
