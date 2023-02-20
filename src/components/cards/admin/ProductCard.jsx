@@ -3,11 +3,23 @@ import React from 'react'
 export default function ProductCard() {
     return (
         <>
-            <div class="p-4 md:w-1/3 sm:w-full">
-                <div class="h-56 border-2 border-gray-200 border-opacity-60 rounded-xl overflow-hidden">
-                    <div className="w-full h-16 bg-gray-100 rounded-t-xl px-8 py-5 border-gray-300 border">
-                        <div className='flex flex-row justify-between'>
-                            <h3>Product Name</h3>
+            <div className='p-4 md:w-1/3 sm:w-full'>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="https://static.vecteezy.com/system/resources/previews/001/987/748/original/abstract-template-blue-geometric-diagonal-overlap-layer-on-dark-blue-background-free-vector.jpg" alt="Sunset in the mountains" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Product Name</div>
+                        <p class="text-gray-700 text-base">
+                            Description
+                        </p>
+                    </div>
+                    <div class="px-6 pt-2 pb-2">
+                        <p class="text-gray-700 text-base">
+                            Category
+                        </p>
+                        <div className='flex flex-wrap justify-between'>
+                            <p class="text-green-500 text-base">
+                                $Price
+                            </p>
                             <section className='flex flex-row'>
                                 <div className=''>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-green-600">
@@ -23,24 +35,9 @@ export default function ProductCard() {
                             </section>
                         </div>
                     </div>
-                    <div className='flex flex-row justify-around'>
-                    <div class="p-6">
-                        <img src=" " alt=' ' className='rounded-xl'/>
-                    </div>
-                    <div class="p-6">
-                        <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop 1</h2>
-                        <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop 2</h2>
-                        <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop 3</h2>
-                        <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop 4</h2>
-                        <div class="flex items-center flex-wrap justify-between">
-                            <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href=" ">$Price
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                    
                 </div>
             </div>
+
         </>
     );
 }

@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function ShopCard() {
     return (
         <>
             <div class="p-4 md:w-1/3 sm:w-full">
-                <div class="h-56 border-2 border-gray-200 border-opacity-60 rounded-xl overflow-hidden">
-                    <div className="w-full h-16 bg-gray-100 rounded-t-xl px-8 py-5 border-gray-300 border">
+                <div class="h-64 md:h-56 border-2 border-gray-300 border-opacity-60 rounded-xl overflow-hidden">
+                    <div className="w-full h-16 bg-gray-300 rounded-t-xl px-8 py-5 border-gray-300 border">
                         <div className='flex flex-row justify-between'>
-                            <h3>Shop 1</h3>
+                            <h3 className='text-black font-semibold'>Shop 1</h3>
                             <section className='flex flex-row'>
                                 <div className=''>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-green-600">
@@ -23,23 +24,27 @@ export default function ShopCard() {
                             </section>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="px-8 py-6 bg-white ">
                         <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Full Name</h2>
                         <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop Number</h2>
                         <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">Shop Type</h2>
                         <h2 class="tracking-widest text-sm title-font font-medium text-gray-400 mb-1">CNIC</h2>
                         <div class="flex items-center flex-wrap justify-between">
+                            <Link to='/adminproducts'>
                             <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href=" ">View Products
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
                                     <path d="M12 5l7 7-7 7"></path>
                                 </svg>
                             </a>
+                            </Link>
+                            <Link to='/addproduct'>
                             <a class="text-green-500 inline-flex items-center md:mb-2 lg:mb-0" href=" ">Add Product
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-green-500">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

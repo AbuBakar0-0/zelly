@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Signup() {
     return (
@@ -91,19 +92,15 @@ export default function Signup() {
 
 
                                 <div class="text-center lg:text-left">
+                                    <Link to='/login'>
                                     <button
                                         type="button"
                                         class="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-md leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                                     >
                                         Signup
                                     </button>
-                                    {/* <p class="text-md font-semibold mt-2 pt-1 mb-0">
-                                        Don't have an account?
-                                        <a
-                                            href="#!"
-                                            class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
-                                        >Register</a>
-                                    </p> */}
+                                    
+                                    </Link>
                                 </div>
                             </form>
                         </div>
